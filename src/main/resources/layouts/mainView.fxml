@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<Pane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="openFileBtn" layoutX="34.0" layoutY="347.0" mnemonicParsing="false" text="Open file..." />
+      <Button fx:id="generateBtn" layoutX="143.0" layoutY="347.0" mnemonicParsing="false" text="Generate" />
+      <TableView fx:id="table" layoutX="22.0" layoutY="36.0" prefHeight="204.0" prefWidth="553.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Button fx:id="setupVariablesBtn" layoutX="22.0" layoutY="262.0" mnemonicParsing="false" text="Setup variables" />
+      <Button fx:id="savePresetBtn" layoutX="134.0" layoutY="262.0" mnemonicParsing="false" text="Save preset" />
+      <Label fx:id="resultCountCaption" layoutX="242.0" layoutY="351.0" prefHeight="17.0" prefWidth="87.0" text="Result count:" />
+      <TextField fx:id="resultPathTF" layoutX="318.0" layoutY="262.0" />
+      <Label fx:id="resultPathCaption" layoutX="241.0" layoutY="266.0" text="Result path:" />
+      <Label fx:id="tableCaption" layoutX="22.0" layoutY="14.0" text="Variables table" />
+   </children>
+</Pane>
