@@ -1,3 +1,4 @@
+import controller.MainController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -8,8 +9,11 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("layouts/mainView.fxml"));
-        primaryStage.setTitle("Hello World");
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("layouts/mainView.fxml"));
+        Parent root = loader.load();
+        MainController mainController = loader.getController();
+        mainController.setMainStage(primaryStage);
+        primaryStage.setTitle("File generator");
         primaryStage.setScene(new Scene(root, 600, 400));
         primaryStage.show();
     }
